@@ -1,0 +1,54 @@
+.main {
+    height: 100vh;
+}
+
+.sidebar {
+    background: rgb(101, 103, 102);
+    color: #fff;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 10px;
+}
+
+.sidebar a:hover{
+    background: #000;
+}
+
+.active {
+    background: #000;
+    border-right: solid 8px blue;
+}
+
+.card-data {
+    border: solid 1px;
+    padding: 20px 50px;
+    color: #fff;
+}
+
+.card-data.buku {
+    background-color: #401F71;
+}
+
+.card-data.kategori {
+    background-color: #007F73;
+}
+
+.card-data.pengguna {
+    background-color: #0C359E;
+}
+
+.card-data i{
+    font-size: 50px;
+}
+
+.card-desc {
+    font-size: 20px;
+}
+
+.card-count {
+    font-size: 20px;
+}
