@@ -50,6 +50,11 @@
                     <textarea name="address" id="address" class="form-control" required></textarea>
                 </div>
 
+                <div class="mb-3">
+                    <label for="profil" class="form-label">Gambar</label>
+                    <input type="file" name="profil" class="form-control">
+                </div>
+
                 <div>
                     <button type="submit" class="btn btn-primary form-control">Register</button>
                 </div>

@@ -32,8 +32,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="title" class="form-label">Sinopsis</label>
-                <input type="text" name="sinopsis" id="title" class="form-control" placeholder="Tahun terbit" value="{{ old('title') }}">
+                <p><label for="sinopsis" class="form-label">Sinopsis</label></p>
+                <textarea id="sinopsis" name="sinopsis" rows="4" cols="50">Masukan Sinopsis</textarea>
             </div>
 
             <div class="mb-3">

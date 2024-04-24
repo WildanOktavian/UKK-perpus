@@ -25,7 +25,7 @@ class Book extends Model
         'tahun_terbit',
         'sinopsis',
         'cover',
-        'slug'
+        'slug',
     ];
 
     public function sluggable(): array

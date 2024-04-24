@@ -36,7 +36,7 @@
 
                 <div class="text-center">
                     don't have account? <a href="{{ route('register') }}">Sign Up</a>
-                </div>
+                </div>  
             </form>
         </div>
     </div>

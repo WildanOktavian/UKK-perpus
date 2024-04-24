@@ -39,11 +39,6 @@ class BookController extends Controller
         if ($request->file('image')) {
             $extension = $request->file('image')->getClientOriginalExtension();
             $imgName = $request->title . '-' . now()->timestamp . '.' . $extension;
-            
-            if (!Storage::exists('cover')) {
-                Storage::makeDirectory('cover');
-            }
-            
             $request->file('image')->storeAs('cover', $imgName);
         }
         

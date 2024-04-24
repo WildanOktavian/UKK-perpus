@@ -63,6 +63,7 @@ class AuthController extends Controller
             'password' => 'required|max:255',
             'phone'=> 'max:255',
             'address'=> 'required',
+            'profile' => 'cover|mimes:jpeg,png,jpg,gif|max:2048',
          ]);
          
          $input = $request->all();

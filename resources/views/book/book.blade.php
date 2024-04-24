@@ -44,8 +44,13 @@
                         </td>
                         {{-- <td>{{ $buku->status }}</td> --}}
                         <td>
-                            <img src="{{ asset('storage/cover/' . $buku->cover) }}" alt="Gambar Prestasi" style="max-width: 150px;">
+                            @if($buku->cover)
+                                <img src="{{ asset('storage/cover/' . $buku->cover) }}" alt="Gambar Buku" style="max-width: 150px;">
+                            @else
+                                Gambar tidak tersedia
+                            @endif
                         </td>
+                                             
                         <td style="display: flex; justify-content: space-around; width: 30%;">
                             <a href="{{ route('edit-book', ['slug' => $buku->slug]) }}" class="btn btn-primary me-2"><i class="fa-regular fa-pen-to-square"></i></a>
                             <!-- Button trigger modal -->
